@@ -20,11 +20,19 @@ Seria interesante consultar los siguentes enlaces ante cualquier duda.
 
 Framework JavaScript para crear y mantener aplicaciones web de una sola página.
 
-[Documentacion oficial](https://angularjs.org/)
+[Documentacion Oficial](https://angularjs.org/)
+
+[Tutorial Oficial](https://docs.angularjs.org/guide/introduction)
+
+[Get Angular JS 1.X.X](https://code.angularjs.org/snapshot/docs/misc/started)
 
 [Buenas Practicas y Estructura de AngularJS](https://scotch.io/tutorials/angularjs-best-practices-directory-structure)
 
 [Tutorial Angular JS](https://www.w3schools.com/angular/)
+
+#### RESTFULL
+
+[Video RESTFULL](https://www.restapitutorial.com/lessons/whatisrest.html)
 
 ### Git
 
