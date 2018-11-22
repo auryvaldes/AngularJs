@@ -17,10 +17,10 @@ Please make sure to update tests as appropriate.
 
 ### Angular JS
 
-[MIT](https://angularjs.org/)
+[Documentacion oficial](https://angularjs.org/)
 
-[MIT](https://www.w3schools.com/angular/)
+[tutorial](https://www.w3schools.com/angular/)
 
 ### Git
 
-[MIT](https://es.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud)
+[Documentacion Bitbucket](https://es.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud)
