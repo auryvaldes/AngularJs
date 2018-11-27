@@ -20,7 +20,7 @@ Seria interesante consultar los siguentes enlaces ante cualquier duda.
 
 [Sitio Oficial](https://getbootstrap.com/)
 
-[Tutorial](https://ajgallego.gitbooks.io/bootstrap-3/content/capitulo_rejilla.html)
+[Tutorial](https://ajgallego.gitbooks.io/bootstrap-3/content/capitulo_introduccion.html)
 
 ### Angular JS
 
