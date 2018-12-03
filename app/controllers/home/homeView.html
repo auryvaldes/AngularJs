@@ -1,0 +1,10 @@
+<!-- creamos un recuadro en donde se alojaran los botones solicitados
+en este caso la clase sera de botones, se define los parametros de estilo del boton
+luego llamos de donde va a consumir la informacion el boton
+en este caso indicamos la informacion que queremos que se muestre, en este caso key(este puede tener cualquier nombre lo importante es el orden)
+ -->
+<h1 style="text-align: center">BIENVENIDOS</h1>
+        <div style="text-align: center; margin-top: 50px;" class="btn-group, center" role="group" aria-label="Basic example">
+          <a  ng-repeat="(key, value) in listMenu" href="#/app/{{key}}" class="btn btn-primary">{{key}}</a>
+        </div>
+ 

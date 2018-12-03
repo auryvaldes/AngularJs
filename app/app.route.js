@@ -9,12 +9,28 @@ angular.
       $locationProvider.hashPrefix('/app');
       $routeProvider.
         when('/view1', {
-            templateUrl: 'controllers/page1/page1View.html',
-            controller: 'Page1Ctrl'
+            templateUrl: 'controllers/home/homeView.html',
+            controller: 'homeCtrl'
           }).
-          when('/view2', {
-            templateUrl: 'controllers/page2/page2View.html',
-            controller: 'Page2Ctrl'
+          when('/posts', {
+            templateUrl: 'controllers/posts/postsView.html',
+            controller: 'postsCtrl'
+          }).
+          when('/comments', {
+            templateUrl: 'controllers/comments/commentsView.html',
+            controller: 'commentsCtrl'
+          }).
+          when('/profile', {
+            templateUrl: 'controllers/profile/profileView.html',
+            controller: 'profileCtrl'
+          }).
+          when('/postsList/:id', {
+            templateUrl: 'controllers/postsList/postsListView.html',
+            controller: 'postsListCtrl'
+          }).
+          when('/commentsList/:id', {
+            templateUrl: 'controllers/commentsList/commentsListView.html',
+            controller: 'commentsListCtrl'
           }).
         otherwise({redirectTo: '/view1'});
     }

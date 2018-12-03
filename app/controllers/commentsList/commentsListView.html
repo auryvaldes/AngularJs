@@ -1,0 +1,51 @@
+
+<div class="container">
+    <table ng-show='showEdit' class="table">
+        <thead>
+
+          <tr>
+            <th>Titulo</th>
+            <th>Autor</th>
+            <th>Comentario</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+             
+            <td>{{part.id}}</td>
+            <td>{{part.body}}</td>
+            <td>{{part.postId}}</td>
+
+            <td>
+              <button class="btn btn-warning" ng-click='editar()'>Modificar</button>
+            </td>
+            </tr>
+     </tbody>        
+    </table>
+
+    <table ng-show='!showEdit' class="table">
+        <thead>
+
+          <tr>
+            <th>Titulo</th>
+            <th>Autor</th>
+            <th>Comentario</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+             
+            <td>{{edit.id}}</td>
+            <td><input ng-model='edit.body'></td>
+            <td><input ng-model= 'edit.postId'></td>
+
+            <td>
+              <button class="btn btn-info" ng-click='guardar()'>Guardar</button>
+            </td>
+            </tr>
+     </tbody>        
+    </table>
+    <a class="btn btn-success" href="#/app/comments">Volver</a>
+    </div>
