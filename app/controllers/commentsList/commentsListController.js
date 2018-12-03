@@ -19,7 +19,7 @@ angular.module('commentsListModule', ['ngRoute'])
     this.showEdit = !this.showEdit;
   };
   $scope.guardar = function() {
-    pepeService.saveComments($scope.edit).then(
+    crudService.saveComments($scope.edit).then(
       function(resp) {
         $scope.edit = resp.data;
         $scope.editar();

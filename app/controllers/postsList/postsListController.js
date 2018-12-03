@@ -23,7 +23,7 @@ angular
       this.showEdit = !this.showEdit;
     };
     $scope.guardar = function() {
-      pepeService.savePosts($scope.edit).then(
+      crudService.savePosts($scope.edit).then(
         function(resp) {
           $scope.edit = resp.data;
           $scope.editar();

@@ -33,7 +33,7 @@ angular.module('postsModule', ['ngRoute'])
 
      //Fundiones para eliminar
         $scope.delete = function() {
-        pepeService.deletePosts($scope.selectDelete).then(
+        crudService.deletePosts($scope.selectDelete).then(
         function(resp) {
         $scope.viewData();
             
