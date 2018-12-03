@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My AngularJS App</title>
+    <title>Blog</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Import Styles -->
@@ -31,12 +31,6 @@
   </head>
   <body>
     <div class="container">
-      <nav class="nav-menu">
-        <div class="btn-group" role="group" aria-label="Basic example">
-          <a href="#/app/view1" class="btn btn-primary">view1</a>
-          <a href="#/app/view2" class="btn btn-secondary">view2</a>
-        </div>
-      </nav>
       <hr />
       <!--[if lt IE 7]>
         <p class="browsehappy">
@@ -48,7 +42,7 @@
 
       <div ng-view></div>
 
-      <div>AngularJS seed app: v<span app-version></span></div>
+      <div>Create by: Aury</div>
     </div>
     <!--
       In production use:
@@ -58,15 +52,22 @@
     <script src="assets/lib/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
     <script src="assets/lib/angular/angular.js"></script>
     <script src="assets/lib/angular-route/angular-route.js"></script>
-    <!-- Import App Config -->
-    <script src="app.module.js"></script>
-    <script src="app.route.js"></script>
-    <!-- Import Controllers -->
-    <script src="controllers/page1/page1Controller.js"></script>
-    <script src="controllers/page2/page2Controller.js"></script>
     <!-- Import Core -->
     <script src="assets/core/version/version.js"></script>
     <script src="assets/core/version/version-directive.js"></script>
     <script src="assets/core/version/interpolate-filter.js"></script>
-  </body>
-</html>
+    <!-- Import App Config -->
+    <script src="app.module.js"></script>
+    <script src="app.route.js"></script>
+    <!-- Import Services -->
+    <script src="services/crudServices.js"></script>
+    <!-- Import Controllers -->
+    <script src="controllers/Home/homeController.js"></script>
+    <script src="controllers/posts/postsController.js"></script>
+    <script src="controllers/comments/commentsController.js"></script>
+    <script src="controllers/profile/profileController.js"></script>
+    <script src="controllers/postsList/postsListController.js"></script>  
+    <script src="controllers/commentsList/commentsListController.js"></script>
+  </body> 
+  </body> 
+</html> 
