@@ -6,7 +6,7 @@
         <h1>{{post.title}}</h1>
 
         <!-- Carousel-->
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div ng-show="post" id="myCarousel" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
           <ol class="carousel-indicators">
             <li ng-repeat="v in post.images" data-target="#myCarousel" data-slide-to="{{$index}}" ng-class="{ active : $index === 0}"></li>

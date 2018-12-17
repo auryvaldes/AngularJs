@@ -12,5 +12,6 @@ angular.module('myApp', [
     'bootstrapPostsModule',
     'bootstrapCommentsModule',
     'bootstrapCommentsListModule',
+    'configModule',
     'myApp.version'
 ]);

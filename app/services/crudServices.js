@@ -6,8 +6,9 @@ creamos otra funcion en donde vamos a definir cual es la informacion que nos va 
 */
 'use strict';
 angular.module('servicesModule', [])
-.service('crudService', function($http) {
-    var url='http://localhost:3000/';
+.service('crudService', function($http, config) {
+
+    var url = config.apiUrl;
 
     this.traeAllData = function(){
        return $http.get(url + 'db'); 
