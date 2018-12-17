@@ -1,0 +1,91 @@
+<div class="container container-view-post">
+  <!-- Caja de post -->
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>{{post.title}}</h1>
+
+        <!-- Carousel-->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li ng-repeat="(i, v) in post.images" ng-class="{ active : i === 0}" data-target="#myCarousel"
+              data-slide-to="{{i}}"></li>
+          </ol>
+          
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item item-post" ng-repeat="(i, v) in post.images" ng-class="{ active : i === 0}">
+              <img src="http://localhost:3000/assets/images/{{v}}" style="width:100%;">
+            </div>
+          </div>
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+      </div>
+      <hr>
+      <p style="text-align: justify">{{post.body}}</p>
+    </div>
+  </div>
+
+
+  <!-- Caja Autor -->
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <p class="float-right"><b>Author:</b> {{post.author}}</p>
+      </div>
+    </div>
+  </div>
+  <!-- Caja Autor End-->
+  <hr>
+  <!-- Caja de comentarioa -->
+  <div class="container">
+    <div class="row">
+      <h3>Comments:</h3>
+      <div class="border-style" ng-repeat="c in comments" class="col-12">
+        <p>{{c.body}}</p>
+        <p class="text-right tex-bold">{{c.date | date : "dd-MM-y h:mm" }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<a class="btn btn-success" href="#/app/bootstrapPosts">Volver</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <h1>Titulos</h1>
+    <h2>Comments:</h2>
+    <div class="container">
+      <div class="row">
+        <div ng-repeat="c in part" class="col-4 col-xs-6 container-author">
+            <h1>Comment {{c.id}}</h1>
+            <p>{{c.body}}</p>
+            <p>{{ c.date | date : "dd-MM-y" }}</p>
+        </div>
+      </div>
+    </div>
+    
+    <a class="btn btn-success" href="#/app/bootstrapPosts">Volver</a> -->

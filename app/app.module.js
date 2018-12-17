@@ -9,5 +9,8 @@ angular.module('myApp', [
     'profileModule',
     'postsListModule',
     'commentsListModule',
+    'bootstrapPostsModule',
+    'bootstrapCommentsModule',
+    'bootstrapCommentsListModule',
     'myApp.version'
 ]);

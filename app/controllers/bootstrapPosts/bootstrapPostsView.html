@@ -1,0 +1,16 @@
+<h1>Titulos</h1>
+<h2>Post:</h2>
+<div class="container">
+  <div class="row">
+    <div ng-repeat="b in bootstrapPosts" class="col-4 col-xs-6 container-author">
+      <a id="click" ng-click="readComments(b.id)">
+        <div class="container-post">
+        <h3 ng-show="b.title.length > 21">{{ b.title }}</h3>
+        <h3 ng-show="b.title.length <= 21" class="title-h3">{{ b.title }}</h3>
+        <hr>
+        <p>{{ b.author }}</p>
+      </div>
+      </a>
+    </div>
+  </div>
+</div>

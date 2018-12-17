@@ -16,22 +16,26 @@
       rel="stylesheet"
       href="assets/lib/html5-boilerplate/dist/css/normalize.css"
     />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
     <link
       rel="stylesheet"
       href="assets/lib/html5-boilerplate/dist/css/main.css"
     />
     <link rel="stylesheet" href="app.css" />
     <!-- Import Bootstrap and Jquery -->
-    <script src="assets/lib/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- <script src="assets/lib/jquery/dist/jquery.min.js"></script>
     <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <link
       rel="stylesheet"
       href="assets/lib/bootstrap/dist/css/bootstrap.min.css"
-    />
+    /> -->
   </head>
   <body>
-    <div class="container">
-      <hr />
+    <div class="container container-body">
+
       <!--[if lt IE 7]>
         <p class="browsehappy">
           You are using an <strong>outdated</strong> browser. Please
@@ -40,7 +44,7 @@
         </p>
       <![endif]-->
 
-      <div ng-view></div>
+      <div class="top-arriba" ng-view></div>
 
       <div>Create by: Aury</div>
     </div>
@@ -68,6 +72,9 @@
     <script src="controllers/profile/profileController.js"></script>
     <script src="controllers/postsList/postsListController.js"></script>  
     <script src="controllers/commentsList/commentsListController.js"></script>
+    <script src="controllers/bootstrapPosts/bootstrapPostsController.js"></script>
+    <script src="controllers/bootstrapComments/bootstrapCommentsController.js"></script>
+    <script src="controllers/bootstrapCommentsList/bootstrapCommentsListController.js"></script>
   </body> 
   </body> 
 </html> 

@@ -45,5 +45,8 @@ angular.module('servicesModule', [])
    this.createComments = function(body){
       return $http.post(url + 'comments/', body); 
    };
+   this.partDataComments = function(id){
+      return $http.get(url + 'posts/'+ id+ '/comments/'); 
+   };
 });
 

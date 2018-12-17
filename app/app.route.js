@@ -32,6 +32,18 @@ angular.
             templateUrl: 'controllers/commentsList/commentsListView.html',
             controller: 'commentsListCtrl'
           }).
+          when('/bootstrapPosts', {
+            templateUrl: 'controllers/bootstrapPosts/bootstrapPostsView.html',
+            controller: 'bootstrapPostsCtrl'
+          }).
+          when('/bootstrapComments', {
+            templateUrl: 'controllers/bootstrapComments/bootstrapCommentsView.html',
+            controller: 'bootstrapCommentsCtrl'
+          }).
+          when('/bootstrapCommentsList/:id', {
+            templateUrl: 'controllers/bootstrapCommentsList/bootstrapCommentsListView.html',
+            controller: 'bootstrapCommentsListCtrl'
+          }).
         otherwise({redirectTo: '/view1'});
     }
   ]);
