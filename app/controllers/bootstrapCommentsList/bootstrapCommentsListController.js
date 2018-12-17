@@ -6,6 +6,8 @@ angular.module('bootstrapCommentsListModule', ['ngRoute'])
     $scope.comments;
     $scope.err;
     
+    // $scope.urlImg = $scope.post + 'string' + $scope.err;
+
     
     // Services - Obtengo informacion de comments
     
