@@ -8,12 +8,17 @@
 
 .container-view-post{ 
   width: 100%!important;
-  border-style:solid;
+  
 }
 .container-author{
   padding: 5px;
  }
 
+ /* .imagenes-customs{
+   width: 1067px!important;
+   height: 221px!important;
+  background-repeat: space;
+ } */
 /*@media all and (min-width: 769px){
 
 } */

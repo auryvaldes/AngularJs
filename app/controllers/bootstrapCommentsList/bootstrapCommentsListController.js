@@ -1,14 +1,13 @@
 'use strict';
 angular.module('bootstrapCommentsListModule', ['ngRoute'])
-.controller('bootstrapCommentsListCtrl', function($scope, $routeParams, crudService) {
+.controller('bootstrapCommentsListCtrl', function($scope, $routeParams, crudService, config) {
     // variables
    $scope.post;
     $scope.comments;
     $scope.err;
-    
-    // $scope.urlImg = $scope.post + 'string' + $scope.err;
-
-    
+    $scope.urlImg = config.apiUrl + 'assets/images/';
+    // $scope.urlImg = $scope.post + 'adadasd' + $scope.err;
+ 
     // Services - Obtengo informacion de comments
     
     crudService.traePartData($routeParams.id).then(function(resp){
