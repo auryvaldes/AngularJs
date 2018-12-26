@@ -1,10 +1,58 @@
-<!-- creamos un recuadro en donde se alojaran los botones solicitados
-en este caso la clase sera de botones, se define los parametros de estilo del boton
-luego llamos de donde va a consumir la informacion el boton
-en este caso indicamos la informacion que queremos que se muestre, en este caso key(este puede tener cualquier nombre lo importante es el orden)
- -->
-<h1 style="text-align: center">BIENVENIDOS</h1>
-        <div style="text-align: center; margin-top: 50px;" class="btn-group, center" role="group" aria-label="Basic example">
-          <a  ng-repeat="(key, value) in listMenu" href="#/app/{{key}}" class="btn btn-primary">{{key}}</a>
-        </div>
- 
+<!--
+  creamos un recuadro en donde se alojaran los botones solicitados
+  en este caso la clase sera de botones, se define los parametros de estilo del boton
+  luego llamos de donde va a consumir la informacion el boton
+  en este caso indicamos la informacion que queremos que se muestre, en este caso key(este puede tener cualquier nombre lo importante es el orden)
+-->
+<header>
+  <div class="container banner-img">
+    <div class="row">
+      <div>
+        <img
+          class="imagenes-customs"
+          stle="align= middle"
+          src="../../assets/imagenes/banner.png"
+        />
+      </div>
+    </div>
+  </div>
+
+  <menu class="menu-style"></menu>
+</header>
+
+<!-- bodyPortal -->
+
+<body>
+  <!-- Second Container -->
+  <div class="container-fluid bg-2 text-center">
+    <h4 class="margin body-word">What Am I?</h4>
+    <p class="body-word">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.
+    </p>
+  </div>
+
+  <!-- Third Container (Grid) -->
+  <div class="container-fluid bg-3 text-center">
+    <h3 class="margin">Where To Find Me?</h3>
+    <br />
+  </div>
+
+  <!-- Footer -->
+  <footer class="container-fluid bg-4 text-center">
+    <p>
+      Bootstrap Theme Made By
+      <a href="https://www.w3schools.com">www.w3schools.com</a>
+    </p>
+  </footer>
+</body>
+
+<!-- bodyPortal-end -->
+
+<!--
+  <div style="text-align: center; margin-top: 50px;" class="btn-group, center" role="group" aria-label="Basic example">
+       <a  ng-repeat="(key, value) in listMenu" href="#/app/{{key}}" class="btn btn-primary">{{key}}</a>
+     </div>
+-->

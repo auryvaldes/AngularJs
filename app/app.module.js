@@ -12,6 +12,7 @@ angular.module('myApp', [
     'bootstrapPostsModule',
     'bootstrapCommentsModule',
     'bootstrapCommentsListModule',
+    'menuModule',  
     'configModule',
     'myApp.version'
 ]);

@@ -1,33 +1,35 @@
-.nav-menu{
+.nav-menu {
   padding-top: 10px;
 }
-.container-body{
-  width: 100%!important;
+.container-body {
+  width: 100% !important;
   padding: 10px;
 }
 
-.container-view-post{ 
-  width: 100%!important;
-  
+.container-view-post {
+  width: 100% !important;
 }
-.container-author{
+.container-author {
   padding: 5px;
- }
+}
 
- /* .imagenes-customs{
-   width: 1067px!important;
-   height: 221px!important;
+.imagenes-customs {
+  width: 1230px !important;
+  height: 221px !important;
   background-repeat: space;
- } */
+}
+
+.banner-img{
+  margin-left: inherit !important;
+}
 /*@media all and (min-width: 769px){
 
 } */
 
-@media all and (min-width: 1025px){
-
+@media all and (min-width: 1025px) {
 }
 
-.container-post{
+.container-post {
   text-align: center;
   border: 1px solid black;
   height: 150px;
@@ -35,27 +37,44 @@
   padding: 5px;
   border-radius: 20px 0px;
 }
-a, a:hover, a:active, a:focus{
-  color:black!important;
-  text-decoration: none!important;
+a,
+a:hover,
+a:active,
+a:focus {
+  color: white !important;
+  text-decoration: none !important;
+  
 }
-a{
+.nav-list > li > a {
   cursor: pointer;
- }
+  color: white !important;
+  width: auto;
+  border-color: white;
+  float: none;
+}
 
 h1 {
   text-align: center;
   width: 100%;
-}
-.title-h3{
+  }
+.title-h3 {
   margin: 24px 5px;
 }
 h2 {
   text-align: center;
   width: 100%;
-  
 }
-.float-right{
+h3 {
+  text-align: center;
+  width: 100%;
+  color: black !important;
+}
+p {
+  text-align: center;
+  width: 100%;
+  color: black;
+}
+.float-right {
   float: right;
 }
 .center {
@@ -65,23 +84,65 @@ h2 {
   padding: 10px;
   text-align: center;
 }
-.text-right{
-text-align: right;
+.text-right {
+  text-align: right;
 }
-.tex-bold{
+.tex-bold {
   font-weight: bold;
 }
-.border-style{
+.border-style {
   margin: 10px;
   width: 100%;
-  border:  solid black;
+  border: solid black;
   padding: 10px;
-  
 }
-.top-arriba{
+.top-arriba {
   padding: 10px;
 }
 
-.item-post{
+.item-post {
   height: 200px;
 }
+
+.menu-nav {
+  display: inline-flex;
+  top: 10px;
+  text-align: center;
+  width: 100%;
+  background: black !important;
+  border: black !important;
+  float: none;
+}
+
+.home-border{
+  border-right: 1px solid violet !important;
+}
+.nav-list > li {
+  display: inline-block !important;
+  float: none !important;
+  border-right: 1px solid violet;
+  width: 200px;
+}
+.nav-list > li:last-child{
+  border-right: none;
+}
+.menu-div {
+  background: black;
+}
+
+a:hover {
+  color: white !important;
+}
+.menu-style{
+  padding: inherit;
+}
+
+.bg-2 { 
+  background-color: #474e5d; /* Dark Blue */
+  
+}
+
+.body-word{
+  color: white;
+}
+  

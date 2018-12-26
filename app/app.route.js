@@ -13,12 +13,20 @@ angular.
             controller: 'homeCtrl'
           }).
           when('/posts', {
-            templateUrl: 'controllers/posts/postsView.html',
-            controller: 'postsCtrl'
+            templateUrl: 'controllers/bootstrapPosts/bootstrapPostsView.html',
+            controller: 'bootstrapPostsCtrl'
           }).
+          // when('/posts', {
+          //   templateUrl: 'controllers/posts/postsView.html',
+          //   controller: 'postsCtrl'
+          // }).
+          // when('/comments', {
+          //   templateUrl: 'controllers/comments/commentsView.html',
+          //   controller: 'commentsCtrl'
+          // }).
           when('/comments', {
-            templateUrl: 'controllers/comments/commentsView.html',
-            controller: 'commentsCtrl'
+            templateUrl: 'controllers/bootstrapComments/bootstrapCommentsView.html',
+            controller: 'bootstrapCommentsCtrl'
           }).
           when('/profile', {
             templateUrl: 'controllers/profile/profileView.html',
