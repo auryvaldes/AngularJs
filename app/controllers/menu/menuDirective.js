@@ -1,9 +1,28 @@
 angular.module('menuModule', [])
+.controller('menuCtrl', ['$scope', 'crudService', function($scope, crudService) {
+    $scope.listMenu;
+   
+    crudService.traeAllData().then(function(resp){
+        $scope.listMenu = resp.data;      
+    });
+}])
 
 .directive('menu', function() {
-return{
-    template: `ng-include`,
-    controller: 'menuCtrl',
-    replace: true
-}
-});
+    return {
+      template: `<!-- Navbar -->
+      <nav class="navbar navbar-inverse menu-nav">
+        <div class="container-fluid menu-div">
+          <div class="navbar-header">
+            <!-- <a class="navbar-brand home-border" href="#">Home</a> -->
+          </div>
+          <ul class="nav navbar-nav nav-list">
+            <li><a href="#/app">Home</a></li>
+            <li ng-repeat="(key, value) in listMenu">
+              <a href="#/app/{{ key }}">{{key}}</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Navbar-end -->`
+    };
+  });
