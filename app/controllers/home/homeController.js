@@ -9,5 +9,11 @@
 angular.module('homeModule', ['ngRoute'])
 .controller('homeCtrl', function($scope, crudService) {
     //Variables
+    $scope.listMenu;
+
+    crudService.traeAllData().then(function(resp) {
+      $scope.listMenu = resp.data;
+    });
+  
 });
 
