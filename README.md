@@ -36,6 +36,8 @@ Framework JavaScript para crear y mantener aplicaciones web de una sola página.
 
 [Tutorial Angular JS](https://www.w3schools.com/angular/)
 
+[Directives](https://adrianmejia.com/blog/2016/04/08/creating-custom-angularjs-directives-for-beginners/)
+
 #### RESTFULL
 
 [Video RESTFULL](https://www.restapitutorial.com/lessons/whatisrest.html)
