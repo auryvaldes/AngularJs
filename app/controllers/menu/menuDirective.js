@@ -12,9 +12,6 @@ angular.module('menuModule', [])
       template: `<!-- Navbar -->
       <nav class="navbar navbar-inverse menu-nav">
         <div class="container-fluid menu-div">
-          <div class="navbar-header">
-            <!-- <a class="navbar-brand home-border" href="#">Home</a> -->
-          </div>
           <ul class="nav navbar-nav nav-list">
             <li><a href="#/app">Home</a></li>
             <li ng-repeat="(key, value) in listMenu">

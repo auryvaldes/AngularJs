@@ -111,7 +111,7 @@ p {
   width: 100%;
   background: black !important;
   border: black !important;
-  float: none;
+  float: none !important;
 }
 
 .home-border{
