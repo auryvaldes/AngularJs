@@ -1,15 +1,18 @@
 <!-- Navbar  -->
-  <!-- <nav class="navbar navbar-inverse menu-nav">
+<nav class="navbar navbar-inverse menu-nav">
     <div class="container-fluid menu-div">
-      <div class="navbar-header">
-      <a class="navbar-brand home-border" href="#">Home</a> 
-      </div>
       <ul class="nav navbar-nav nav-list">
-        <li><a href="#/app">Home</a></li>
-        <li ng-repeat="(key, value) in listMenu">
-          <a href="#/app/{{ key }}">{{key}}</a>
+        <li><a href="#">Home</a></li>
+        <li ng-repeat="menu in listMenu" class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#/app{{menu.url}}">
+            {{menu.name}}<span class="caret"></span>
+          </a>
+          <ul ng-repeat="submenu in menu.submenu" class="dropdown-menu">
+            <li><a class="menuDropdown" href="#/app{{submenu.url}}">{{submenu.name}}</a></li>
+          </ul>
         </li>
       </ul>
     </div>
-  </nav> -->
- <!-- Navbar-end -->
+  </nav>
+<!-- Navbar-end -->
+

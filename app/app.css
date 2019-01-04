@@ -144,5 +144,8 @@ a:hover {
 
 .body-word{
   color: white;
+
 }
-  
+.menuDropdown{
+  color: black !important;
+}

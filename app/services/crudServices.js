@@ -49,5 +49,8 @@ angular.module('servicesModule', [])
    this.partDataComments = function(id){
       return $http.get(url + 'posts/'+ id+ '/comments/'); 
    };
+   this.menuData = function(){
+      return $http.get(url + 'menu/'); 
+   }; 
 });
 
