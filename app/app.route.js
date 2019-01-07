@@ -6,7 +6,9 @@ angular.
     '$locationProvider', 
     '$routeProvider',
     function config($locationProvider, $routeProvider) {
-      $locationProvider.hashPrefix('');
+
+      //Permite sacar el # de la URLs
+      $locationProvider.html5Mode(true);
       $routeProvider.
         when('/home', {
             templateUrl: 'controllers/home/homeView.html',
