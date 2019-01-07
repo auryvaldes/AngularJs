@@ -1,18 +1,22 @@
-<!-- Navbar  -->
-<nav class="navbar navbar-inverse menu-nav">
-    <div class="container-fluid menu-div">
-      <ul class="nav navbar-nav nav-list">
-        <li><a href="#">Home</a></li>
-        <li ng-repeat="menu in listMenu" class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#/app{{menu.url}}">
-            {{menu.name}}<span class="caret"></span>
-          </a>
-          <ul ng-repeat="submenu in menu.submenu" class="dropdown-menu">
-            <li><a class="menuDropdown" href="#/app{{submenu.url}}">{{submenu.name}}</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </nav>
-<!-- Navbar-end -->
-
+  <!-- Navbar  -->
+  <nav class="navbar navbar-inverse menu-nav">
+      <div class="container-fluid menu-div">
+        <ul class="nav navbar-nav nav-list">
+          <li ng-repeat="menu in listMenu" class="dropdown">
+            <a ng-if="menu.submenu.length >0" class="dropdown-toggle" data-toggle="dropdown">
+              {{menu.name}}<span class="caret"></span>
+              <ul class="dropdown-menu">
+                  <li ng-repeat="submenu in menu.submenu">
+                    <a class="menuDropdown" href="{{submenu.url}}">{{submenu.name}}</a>
+                  </li>
+                </ul>
+            </a>
+            <a ng-if="menu.submenu.length === 0" href="{{menu.url}}">
+              {{menu.name}}
+            </a>
+            
+          </li>
+        </ul>
+      </div>
+    </nav>
+  <!-- Navbar-end -->

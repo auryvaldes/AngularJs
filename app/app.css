@@ -120,6 +120,7 @@ p {
 .nav-list > li {
   display: inline-block !important;
   float: none !important;
+  flex-direction: none !important;
   border-right: 1px solid violet;
   width: 200px;
 }

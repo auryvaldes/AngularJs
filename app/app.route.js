@@ -8,7 +8,7 @@ angular.
     function config($locationProvider, $routeProvider) {
       $locationProvider.hashPrefix('/app');
       $routeProvider.
-        when('/view1', {
+        when('/home', {
             templateUrl: 'controllers/home/homeView.html',
             controller: 'homeCtrl'
           }).
@@ -52,6 +52,6 @@ angular.
             templateUrl: 'controllers/bootstrapCommentsList/bootstrapCommentsListView.html',
             controller: 'bootstrapCommentsListCtrl'
           }).
-        otherwise({redirectTo: '/view1'});
+        otherwise({redirectTo: '/home'});
     }
   ]);
