@@ -69,6 +69,9 @@ h3 {
   width: 100%;
   color: black !important;
 }
+h5 {
+    color:white !important;
+}
 p {
   text-align: center;
   width: 100%;
@@ -141,7 +144,8 @@ a:hover {
 }
 
 .body-word{
-  color: white;
+  color: black;
+  
 
 }
 .menuDropdown{
@@ -149,5 +153,26 @@ a:hover {
 }
 
 .customsFooter{
-  background-color: rgb(175, 93, 176)
+  background-color: rgb(28, 35, 49);
+}
+.footer-copy{
+  color: white;
+}
+.contenido-customs{
+  color: white !important;
+}
+.footer-copyright{
+  background-color: black;
+}
+.btn-fb{
+  color: white;
+  background-color: #3B5998;
+}
+.btn-tw{
+  color: white;
+  background-color: #55ACEE;
+}
+.btn-ins{
+  color: white;
+  background-color: #D87A68;
 }
