@@ -52,5 +52,8 @@ angular.module('servicesModule', [])
    this.menuData = function(){
       return $http.get(url + 'menu/'); 
    }; 
+   this.footerData = function(){
+      return $http.get(url + 'configSystem/'); 
+   }; 
 });
 

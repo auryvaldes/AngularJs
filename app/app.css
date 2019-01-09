@@ -74,9 +74,6 @@ p {
   width: 100%;
   color: black;
 }
-.float-right {
-  float: right;
-}
 .center {
   margin: auto;
   width: 100%;
@@ -149,4 +146,8 @@ a:hover {
 }
 .menuDropdown{
   color: black !important;
+}
+
+.customsFooter{
+  background-color: rgb(175, 93, 176)
 }

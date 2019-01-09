@@ -54,6 +54,7 @@ angular.
             templateUrl: 'controllers/bootstrapCommentsList/bootstrapCommentsListView.html',
             controller: 'bootstrapCommentsListCtrl'
           }).
+          
         otherwise({redirectTo: '/home'});
          
     }

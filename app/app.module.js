@@ -14,5 +14,6 @@ angular.module('myApp', [
     'bootstrapCommentsListModule',
     'menuModule',  
     'configModule',
+    'customsfooterModule',
     'myApp.version'
 ]);

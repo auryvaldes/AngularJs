@@ -26,6 +26,7 @@
       href="assets/lib/html5-boilerplate/dist/css/main.css"
     />
     <link rel="stylesheet" href="app.css" />
+    <!-- <link rel="stylesheet" href="app.less" /> -->
     <!-- Import Bootstrap and Jquery -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -50,7 +51,7 @@
 
       <div class="top-arriba" ng-view></div>
 
-      <div>Create by: Aury</div>
+      <!-- <div>Create by: Aury</div> -->
     </div>
     <!--
       In production use:
@@ -70,8 +71,11 @@
     <script src="app.route.js"></script>
     <!-- Import Services -->
     <script src="services/crudServices.js"></script>
-    <!-- Import Directive -->
+    <!-- Import Directive Menu -->
     <script src="controllers/menu/menuDirective.js"></script>
+
+    <!-- Import Directive Footer -->
+    <script src="controllers/footer/footerDirective.js"></script>
     <!-- Import Controllers -->
     <script src="controllers/home/homeController.js"></script>
     <script src="controllers/posts/postsController.js"></script>
