@@ -2,17 +2,17 @@
 <h2>Post:</h2>
 
 <div ng-controller="menuCtrl">
-  <menu listMenu="listMenu"></menu>
-
-<div class="container">
+  <menu class="menuCustoms" listMenu="listMenu"></menu>
+</div>
+<div class="container-fluid">
   <div class="row">
-    <div ng-repeat="b in bootstrapPosts" class="col-4 col-xs-6 container-author">
+    <div ng-repeat="b in bootstrapPosts" class="col-xs-12 col-md-4 container-author">
       <a id="click" ng-click="readComments(b.id)" href="">
         <div class="container-post">
-        <h3 ng-show="b.title.length > 21">{{ b.title }}</h3>
-        <h3 ng-show="b.title.length <= 21" class="title-h3">{{ b.title }}</h3>
-        <hr>
-        <p>{{ b.author }}</p>
+        <h3>{{ b.title }}</h3>
+        
+        <hr class="hidden-xs">
+        <p class="hidden-xs">{{ b.author }}</p>
       </div>
       </a>
     </div>

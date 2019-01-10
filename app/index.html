@@ -4,44 +4,59 @@
 <!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
 <!-- [if gt IE 8]><! -->
 <html lang="en" ng-app="myApp" class="no-js">
-<!-- <![endif] -->
+  <!-- <![endif] -->
 
-<head>
-  <meta charset="utf-8"/>
-  <!-- para sacar # de la url-->
-  <base href="/">
+  <head>
+    <meta charset="utf-8" />
+    <!-- para sacar # de la url-->
+    <base href="/" />
 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Blog</title>
-  <meta name="description" content="" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Blog</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="icono.png" />
 
-  <!-- Add icon library -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Add icon library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-  <!-- Import Styles -->
-  <link rel="stylesheet" href="assets/lib/html5-boilerplate/dist/css/normalize.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-  
-  <link rel="stylesheet" href="assets/lib/html5-boilerplate/dist/css/main.css" />
-  <link rel="stylesheet" href="app.css"/>
-  <!-- <link rel="stylesheet" href="app.less" /> -->
-  <!-- Import Bootstrap and Jquery -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <!-- <script src="assets/lib/jquery/dist/jquery.min.js"></script>
+    <!-- Import Styles -->
+    <link
+      rel="stylesheet"
+      href="assets/lib/html5-boilerplate/dist/css/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" type="text/css" href="shetland.css" media="screen and (max-device-width: 480px)" /> -->
+    <link
+      rel="stylesheet"
+      href="assets/lib/html5-boilerplate/dist/css/main.css"
+    />
+    <link rel="stylesheet" href="app.css" />
+    <!-- <link rel="stylesheet" href="app.less" /> -->
+    <!-- Import Bootstrap and Jquery -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- <script src="assets/lib/jquery/dist/jquery.min.js"></script>
     <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <link
       rel="stylesheet"
       href="assets/lib/bootstrap/dist/css/bootstrap.min.css"-->
-    
   </head>
   <body>
     <div class="container container-body">
-
-  <!--[if lt IE 7]>
+      <!--[if lt IE 7]>
         <p class="browsehappy">
           You are using an <strong>outdated</strong> browser. Please
           <a href="http://browsehappy.com/">upgrade your browser</a> to improve
@@ -49,44 +64,42 @@
         </p>
       <![endif]-->
 
-  <div class="top-arriba" ng-view></div>
+      <div class="top-arriba" ng-view></div>
 
-  <!-- <div>Create by: Aury</div> -->
-  </div>
-  <!--
+      <!-- <div>Create by: Aury</div> -->
+    </div>
+    <!--
       In production use:
       <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
     -->
-  <!-- Import Lib -->
-  <script src="assets/lib/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
-  <script src="assets/lib/angular/angular.js"></script>
-  <script src="assets/lib/angular-route/angular-route.js"></script>
-  <script src="assets/config/config.js"></script>
-  <!-- Import Core -->
-  <script src="assets/core/version/version.js"></script>
-  <script src="assets/core/version/version-directive.js"></script>
-  <script src="assets/core/version/interpolate-filter.js"></script>
-  <!-- Import App Config -->
-  <script src="app.module.js"></script>
-  <script src="app.route.js"></script>
-  <!-- Import Services -->
-  <script src="services/crudServices.js"></script>
-  <!-- Import Directive Menu -->
-  <script src="controllers/menu/menuDirective.js"></script>
+    <!-- Import Lib -->
+    <script src="assets/lib/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="assets/lib/angular/angular.js"></script>
+    <script src="assets/lib/angular-route/angular-route.js"></script>
+    <script src="assets/config/config.js"></script>
+    <!-- Import Core -->
+    <script src="assets/core/version/version.js"></script>
+    <script src="assets/core/version/version-directive.js"></script>
+    <script src="assets/core/version/interpolate-filter.js"></script>
+    <!-- Import App Config -->
+    <script src="app.module.js"></script>
+    <script src="app.route.js"></script>
+    <!-- Import Services -->
+    <script src="services/crudServices.js"></script>
+    <!-- Import Directive Menu -->
+    <script src="controllers/menu/menuDirective.js"></script>
 
-  <!-- Import Directive Footer -->
-  <script src="controllers/footer/footerDirective.js"></script>
-  <!-- Import Controllers -->
-  <script src="controllers/home/homeController.js"></script>
-  <script src="controllers/posts/postsController.js"></script>
-  <script src="controllers/comments/commentsController.js"></script>
-  <script src="controllers/profile/profileController.js"></script>
-  <script src="controllers/postsList/postsListController.js"></script>
-  <script src="controllers/commentsList/commentsListController.js"></script>
-  <script src="controllers/bootstrapPosts/bootstrapPostsController.js"></script>
-  <script src="controllers/bootstrapComments/bootstrapCommentsController.js"></script>
-  <script src="controllers/bootstrapCommentsList/bootstrapCommentsListController.js"></script>
+    <!-- Import Directive Footer -->
+    <script src="controllers/footer/footerDirective.js"></script>
+    <!-- Import Controllers -->
+    <script src="controllers/home/homeController.js"></script>
+    <script src="controllers/posts/postsController.js"></script>
+    <script src="controllers/comments/commentsController.js"></script>
+    <script src="controllers/profile/profileController.js"></script>
+    <script src="controllers/postsList/postsListController.js"></script>
+    <script src="controllers/commentsList/commentsListController.js"></script>
+    <script src="controllers/bootstrapPosts/bootstrapPostsController.js"></script>
+    <script src="controllers/bootstrapComments/bootstrapCommentsController.js"></script>
+    <script src="controllers/bootstrapCommentsList/bootstrapCommentsListController.js"></script>
   </body>
-  </body>
-
 </html>
