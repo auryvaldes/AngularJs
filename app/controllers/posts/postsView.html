@@ -1,75 +1,75 @@
 <h1 style="text-align: center">POSTS</h1>
 <div class="container">
-    <table ng-show='showCrear' class="table">
-        <thead>
-          <tr style="background-color:azure">
-            <th>Titulo</th>
-            <th>Autor</th>
-            <th>Comentario</th>
-            <th>Action</th>
-         </tr>
-        </thead>
-        <tbody>
-          <tr ng-repeat="p in posts">
-            <!-- P en este caso el el nombre de mi variable posts
+  <table ng-show='showCrear' class="table">
+    <thead>
+      <tr style="background-color:azure">
+        <th>Titulo</th>
+        <th>Autor</th>
+        <th>Comentario</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="p in posts">
+        <!-- P en este caso el el nombre de mi variable posts
             luego le includo donde estan almacenada esa info -->
-              <td>{{p.id}}</td>
-              <td>{{p.title}}</td>
-              <td>{{p.author}}</td>
-              <td>           
-                <!-- indicamos la accion del boton click indicando la variable y su parametro -->   
-                <button ng-click="readPost(p.id)" type="button" class="btn btn-warning">Detail</button>
-                <button ng-click="borrarPost(p.id)" type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">Delete</button>
-                
-             </td>
-          </tr>
-        </tbody>  
-     </table>
+        <td>{{p.id}}</td>
+        <td>{{p.title}}</td>
+        <td>{{p.author}}</td>
+        <td>
+          <!-- indicamos la accion del boton click indicando la variable y su parametro -->
+          <button ng-click="readPost(p.id)" type="button" class="btn btn-warning">Detail</button>
+          <button ng-click="borrarPost(p.id)" type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">Delete</button>
 
-     <table ng-show='!showCrear' class="table">
-        <thead>
-          <tr style="background-color:azure">
-            <th>Titulo</th>
-            <th>Autor</th>
-            <th>Comentario</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <!-- P en este caso el el nombre de mi variable posts
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table ng-show='!showCrear' class="table">
+    <thead>
+      <tr style="background-color:azure">
+        <th>Titulo</th>
+        <th>Autor</th>
+        <th>Comentario</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <!-- P en este caso el el nombre de mi variable posts
             luego le includo donde estan almacenada esa info -->
-              <td>{{p.id}}</td>
-              <td><input ng-model='crea.title'></td>
-                <td><input ng-model= 'crea.author'></td>
-                <td>
-                    <button class="btn btn-info" ng-click='guardar()'>Guardar</button>
-                  </td>
-          </tr>
-        </tbody>  
-     </table>
-  
+        <td>{{p.id}}</td>
+        <td><input ng-model='crea.title'></td>
+        <td><input ng-model='crea.author'></td>
+        <td>
+          <button class="btn btn-info" ng-click='guardar()'>Guardar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
 </div>
 
 <button class="btn btn-info" ng-click='crear()'>Crear</button>
 <!-- Colocar un link de regreso, direccionando a la panatalla de inicio que en este caso es view1 -->
-<a class="btn btn-success float-right" href="#/app/view1" algin=right >Volver</a>
+<a class="btn btn-success float-right" href="#/app/view1" algin=right>Volver</a>
 
 
 
 <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog modal-sm">
-      <div class="modal-content">
-        <div class="modal-header">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
         <h4 class="modal-title">Eliminar comentario</h4>
-        </div>
-        <div class="modal-body">
-          <p>¿Está seguro de querer eliminar comentario?</p>
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-default" data-dismiss="modal" ng-click='delete()'>Confirmar</button>
-          <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-        </div>
+      </div>
+      <div class="modal-body">
+        <p>¿Está seguro de querer eliminar comentario?</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-default" data-dismiss="modal" ng-click='delete()'>Confirmar</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
       </div>
     </div>
   </div>
+</div>

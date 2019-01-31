@@ -55,5 +55,6 @@ angular.module('servicesModule', [])
    this.footerData = function(){
       return $http.get(url + 'configSystem/'); 
    }; 
+    
 });
 

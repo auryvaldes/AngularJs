@@ -13,6 +13,7 @@ angular.module('myApp', [
     'bootstrapCommentsModule',
     'bootstrapCommentsListModule',
     'menuModule',  
+    'myheaderModule',
     'configModule',
     'customsfooterModule',
     'myApp.version'

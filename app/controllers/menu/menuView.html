@@ -1,12 +1,15 @@
   <!-- Navbar  -->
   <nav class="navbar navbar-inverse menu-nav">
       <div class="container-fluid menu-div">
+          <div class="navbar-header">
+             <img class="logoNav" href="#" src="../../assets/imagenes/logo/logo.png">
+          </div>
         <ul class="nav navbar-nav nav-list">
           <li ng-repeat="menu in listMenu" class="dropdown">
             <a ng-if="menu.submenu.length >0" class="dropdown-toggle" data-toggle="dropdown">
               {{menu.name}}<span class="caret"></span>
               <ul class="dropdown-menu">
-                  <li ng-repeat="submenu in menu.submenu">
+                  <li class= "li-fondo" ng-repeat="submenu in menu.submenu">
                     <a class="menuDropdown" href="{{submenu.url}}">{{submenu.name}}</a>
                   </li>
                 </ul>

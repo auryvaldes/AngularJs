@@ -1,27 +1,15 @@
-<!--
-  creamos un recuadro en donde se alojaran los botones solicitados
-  en este caso la clase sera de botones, se define los parametros de estilo del boton
-  luego llamos de donde va a consumir la informacion el boton
-  en este caso indicamos la informacion que queremos que se muestre, en este caso key(este puede tener cualquier nombre lo importante es el orden)
--->
-<header>
-  <div class="container banner-img hidden-xs">
-    <div class="row">
-      <div>
-        <img
-          class="imagenes-customs"
-          stle="align= middle"
-          src="../../assets/imagenes/banner.png"
-        />
-      </div>
-    </div>
-  </div>
+ <!-- header -->
+ <div ng-controller="myheaderCtrl">
+  <myheader settingheader="settingheader"></myheader>
+</div>
+<!-- header-end -->
 
+  <!-- menu -->
   <div ng-controller="menuCtrl">
     <menu class="menuCustoms" listMenu="listMenu"></menu>
   </div>
+  <!-- menu-end -->
   
-</header>
 <!-- bodyPortal -->
 <body>
   <!-- Second Container -->
@@ -80,10 +68,5 @@
   </div>
 </body>
 
-  <!-- Footer -->
-    <div ng-controller="customsfooterCtrl">
-      <customsfooter footerList="footerList"></customsfooter>
-    </div>
- <!-- Footer-end -->
 
 

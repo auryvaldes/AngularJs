@@ -2,14 +2,14 @@
 angular.module('bootstrapPostsModule', ['ngRoute'])
 .controller('bootstrapPostsCtrl', function($scope, $location, crudService) {
     // variables
-    $scope.bootstrapPosts;
+    $scope.posts;
     $scope.err;
     
     
     // Cuando se ejecute esta funcion me trea la data del backend   
     $scope.viewData = function(){
       crudService.postsData().then(function(resp){
-        $scope.bootstrapPosts = resp.data;
+        $scope.posts = resp.data;
         
            }, 
            function(err){

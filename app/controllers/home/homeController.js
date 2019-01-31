@@ -14,6 +14,5 @@ angular.module('homeModule', ['ngRoute'])
     crudService.traeAllData().then(function(resp) {
       $scope.listMenu = resp.data;
     });
-  
 });
 
